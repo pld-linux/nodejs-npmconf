@@ -1,23 +1,27 @@
 %define		pkg	npmconf
 Summary:	The config thing npm uses
 Name:		nodejs-%{pkg}
-Version:	0.0.16
+Version:	0.0.23
 Release:	1
 License:	MIT
 Group:		Development/Libraries
 URL:		https://github.com/isaacs/npmconf
 # download from https://github.com/isaacs/%{pkg}/tarball/%%{version}
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	3224d1de46f490f66cb8a1492807a8af
+# Source0-md5:	4d759f24e286fcacb7b8c609ff73b280
 BuildRequires:	rpmbuild(macros) >= 1.634
 BuildRequires:	sed >= 4.0
 Requires:	nodejs
 Requires:	nodejs-config-chain >= 1.1.1
 Requires:	nodejs-inherits >= 1.0.0
-Requires:	nodejs-once >= 1.1.1
+Requires:	nodejs-ini < 1.2.0
+Requires:	nodejs-ini >= 1.1.0
 Requires:	nodejs-mkdirp >= 0.3.3
-Requires:	nodejs-osenv >= 0.0.3
 Requires:	nodejs-nopt >= 2.0.0
+Requires:	nodejs-once >= 1.1.1
+Requires:	nodejs-osenv >= 0.0.3
+Requires:	nodejs-semver < 1.2.0
+Requires:	nodejs-semver >= 1.1.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
