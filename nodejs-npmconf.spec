@@ -1,12 +1,12 @@
 %define		pkg	npmconf
 Summary:	The config thing npm uses
 Name:		nodejs-%{pkg}
-Version:	1.0.1
+Version:	1.0.2
 Release:	1
 License:	BSD
 Group:		Development/Libraries
 Source0:	http://registry.npmjs.org/%{pkg}/-/%{pkg}-%{version}.tgz
-# Source0-md5:	6d28f7f5be540cd641714fc7f3852b70
+# Source0-md5:	7b3a45763779d0aed9cc3df977e6105e
 URL:		https://github.com/isaacs/npmconf
 BuildRequires:	rpmbuild(macros) >= 1.634
 Requires:	nodejs
@@ -18,7 +18,7 @@ Requires:	nodejs-ini < 2.0.0
 Requires:	nodejs-ini >= 1.1.0
 Requires:	nodejs-mkdirp < 0.4.0
 Requires:	nodejs-mkdirp >= 0.3.3
-Requires:	nodejs-nopt < 3
+Requires:	nodejs-nopt < 4
 Requires:	nodejs-nopt >= 2
 Requires:	nodejs-once < 1.4.0
 Requires:	nodejs-once >= 1.3.0
